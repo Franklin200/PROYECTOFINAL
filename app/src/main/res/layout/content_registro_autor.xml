@@ -7,8 +7,8 @@
     android:background="@color/colorfondo"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context=".RegistroAutor"
+    tools:showIn="@layout/activity_registro_autor">
 
     <TextView
         android:id="@+id/tv"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="serif-monospace"
-        android:text="REGISTRO DE HIMNARIOS \n (Cristianos) "
+        android:text="REGISTRO DE AUTORES \n (Cristianos) "
         android:textAlignment="center"
         android:textSize="26dp"
         android:textStyle="bold" />
@@ -31,10 +31,11 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/et_titulo"
+                android:id="@+id/et_dui"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese el código"
+                android:hint="Ingrese el dui"
+                android:inputType="number"
                 android:background="@drawable/estiloedittext"
                 android:shadowRadius="5"
                 android:paddingLeft="25dp"
@@ -46,7 +47,35 @@
                 />
 
             <EditText
-                android:id="@+id/et_descripcion"
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el nombre del autor"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/estiloedittext"
+                android:paddingLeft="25dp"
+                android:drawableStart="@drawable/ic_descripcion"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/et_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese la edad del autor"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/estiloedittext"
+                android:paddingLeft="25dp"
+                android:drawableStart="@drawable/ic_descripcion"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/et_descripcionautor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ingrese la descripción del himnario"
@@ -59,45 +88,9 @@
                 android:drawablePadding="5dp"
                 />
 
-            <EditText
-                android:id="@+id/et_categoria"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Ingrese la categoria del himnario"
-                android:layout_marginRight="12dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/estiloedittext"
-                android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_descripcion"
-                android:drawablePadding="5dp"
-                />
-
-            <EditText
-                android:id="@+id/et_fecha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Ingrese la fecha del himnario"
-                android:inputType="datetime"
-                android:layout_marginRight="12dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/estiloedittext"
-                android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_descripcion"
-                android:drawablePadding="5dp"
-                />
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-
-            </Spinner>
-
 
             <Button
-                android:id="@+id/btn_guardar"
+                android:id="@+id/btn_guardarautor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
