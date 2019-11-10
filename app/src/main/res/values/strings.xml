@@ -4,5 +4,5 @@
     <string name="title_activity_vistaprincipal">Vistaprincipal</string>
     <string name="buttonregistrar">Registrar Himnario</string>
     <string name="titulovistaprincipal">HImnarios Cristianos</string>
-    <string name="title_activity_registro_autor">RegistroAutor</string>
+    <string name="title_activity_registro_autor">Registrar Autor</string>
 </resources>
