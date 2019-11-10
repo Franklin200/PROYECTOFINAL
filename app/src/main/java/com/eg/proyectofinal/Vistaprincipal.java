@@ -14,13 +14,14 @@ import android.widget.Button;
 
 public class Vistaprincipal extends AppCompatActivity {
 
-    private Button btnregistrar;
+    private Button btnregistrarhimnario, btnregistrarautor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vistaprincipal);
-        btnregistrar = (Button)findViewById(R.id.btn_registrar);
+        btnregistrarhimnario = (Button)findViewById(R.id.btn_registrarhimnario);
+        btnregistrarautor = (Button)findViewById(R.id.btn_registrarautor);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -34,10 +35,18 @@ public class Vistaprincipal extends AppCompatActivity {
             }
         });
 
-        btnregistrar.setOnClickListener(new View.OnClickListener() {
+        btnregistrarhimnario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Vistaprincipal.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnregistrarautor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Vistaprincipal.this,RegistroAutor.class);
                 startActivity(intent);
             }
         });
